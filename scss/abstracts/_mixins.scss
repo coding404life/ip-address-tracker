@@ -1,0 +1,39 @@
+//mixin media query from high to low
+@mixin mediaMin($arg...) {
+    @if length($arg)==1 {
+        @media(min-width: nth($arg, 1)) {
+            @content;
+        }
+    }
+
+    @if length($arg)==2 {
+        @media(min-width:nth($arg, 1)) and (max-width: nth($arg, 2)) {
+            @content;
+        }
+    }
+}
+
+//mixin media query form low to high
+@mixin mediaMax($arg...) {
+    @if length($arg)==1 {
+        @media(max-width: nth($arg, 1)) {
+            @content;
+        }
+    }
+
+    @if length($arg)==2 {
+        @media(max-width:nth($arg, 1)) and (min-width: nth($arg, 2)) {
+            @content;
+        }
+    }
+}
+
+//crossbrowser mixin
+@mixin css3-prefix($property, $value) {
+    -webkit-#{$property}: #{$value};
+    -khtml-#{$property}: #{$value};
+    -moz-#{$property}: #{$value};
+    -ms-#{$property}: #{$value};
+    -o-#{$property}: #{$value};
+    #{$property}: #{$value};
+}

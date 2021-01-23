@@ -1,0 +1,42 @@
+nav {
+    .navbar-brand {
+        font-size: 1.4em;
+        text-transform: uppercase;
+    }
+
+    .active {
+        color: $greenColor !important;
+        // border: 1px solid $greenColor;
+        border-radius: 7px;
+    }
+
+    .nav-link {
+        font-weight: bold;
+        text-transform: capitalize;
+
+        &:hover {
+            color: $greenColor !important;
+        }
+    }
+
+    .form-control {
+        width: 82%;
+
+        &:focus {
+            border-color: $greenColor;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .5);
+        }
+    }
+
+
+    @include mediaMax(769px) {
+        #navbarNav {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.2em;
+        }
+    }
+}

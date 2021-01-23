@@ -1,0 +1,10 @@
+//importing sass files
+@import "../node_modules/rfs/scss";
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/global';
+@import 'base/typography';
+@import 'base/button';
+@import 'components/navigation';
+@import 'components/footer';
+@import 'pages/home';
