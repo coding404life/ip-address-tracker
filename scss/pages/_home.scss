@@ -1,0 +1,57 @@
+header {
+    background-image: url('../images/pattern-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 0 3rem;
+    min-height: 16rem;
+
+    .title {
+        color: $whiteColor;
+        text-transform: capitalize;
+    }
+
+    .search-ip {
+        padding: 1.6rem 1rem;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .search-btn {
+        border-radius: 0 15px 15px 0;
+        padding: 0 1.2rem;
+        background-color: $blackColor;
+    }
+}
+
+//end header styles
+
+// start ip-info section
+#ip-info {
+    z-index: 100;
+    padding: 2rem 10%;
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+
+    .box {
+        background-color: $whiteColor;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        box-shadow: 0 3px 10px 0px #ddd;
+    }
+
+    p {
+        text-transform: uppercase;
+        color: #9c9a9a;
+        font-family: $rubikFont;
+        font-weight: 500;
+    }
+
+    h4 {
+        @include font-size(1.5rem);
+    }
+}
