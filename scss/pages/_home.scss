@@ -34,14 +34,28 @@ header {
     left: 0;
     right: 0;
 
+    @include mediaMax(550px) {
+        top: 8rem;
+        padding: 2rem 5%;
+    }
+
     .box {
         background-color: $whiteColor;
         border-radius: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         box-shadow: 0 3px 10px 0px #ddd;
+
+        @include mediaMax(550px) {
+            text-align: center;
+            padding: 1rem 0;
+
+            p {
+                margin-bottom: .5rem;
+            }
+        }
     }
 
     p {
@@ -52,7 +66,7 @@ header {
     }
 
     h4 {
-        @include font-size(1.5rem);
+        @include font-size(1.3rem);
     }
 }
 
@@ -61,5 +75,10 @@ header {
 #map {
     #mapid {
         height: 70vh;
+        z-index: 0;
+
+        @include mediaMin(1024px) {
+            height: 74vh;
+        }
     }
 }
