@@ -79,7 +79,7 @@ header {
 //map styles
 #map {
     #mapid {
-        height: 70vh;
+        height: 65vh;
         z-index: 0;
 
         @include mediaMin(1024px) {
