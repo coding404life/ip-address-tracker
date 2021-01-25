@@ -54,6 +54,7 @@ header {
 
             p {
                 margin-bottom: .5rem;
+                font-size: .7rem;
             }
         }
     }
@@ -66,7 +67,11 @@ header {
     }
 
     h4 {
-        @include font-size(1.3rem);
+        @include font-size(1.4rem);
+
+        @include mediaMax(550px) {
+            @include font-size(1.1rem);
+        }
     }
 }
 
