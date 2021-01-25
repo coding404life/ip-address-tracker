@@ -48,8 +48,6 @@ const fetchIp = async (inputVal) => {
         //3. passing lat and lng to the map 
         map(data.location.lat, data.location.lng);
 
-        console.log(data)
-
     } catch (err) {
         console.log(err)
     }
