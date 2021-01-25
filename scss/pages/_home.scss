@@ -55,3 +55,11 @@ header {
         @include font-size(1.5rem);
     }
 }
+
+
+//map styles
+#map {
+    #mapid {
+        height: 70vh;
+    }
+}
